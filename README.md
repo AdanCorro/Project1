@@ -1,2 +1,2 @@
 # Project1
-Este va a ser nuestro poryecto
+Este va a ser nuestro proyecto
