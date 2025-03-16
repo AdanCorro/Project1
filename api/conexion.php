@@ -2,7 +2,7 @@
 $dbConnect = array(
     'server' => 'localhost',
     'user' => 'root',
-    'pass' => '2212',
+    'pass' => '',
     'dbname' => 'fitness_app'
 );
 
