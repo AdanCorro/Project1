@@ -12,10 +12,9 @@ $db = new mysqli(
     $dbConnect['pass'],
     $dbConnect['dbname']
 );
-if ($db->connect_errno>0) {
+if ($db->connect_errno > 0) {
     echo "Database connection error" . $db->connect_error;
     exit;
 }
 
 $acentos = $db->query("SET NAMES 'utf8'");
-?>
