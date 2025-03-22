@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.imagen-inicio{
+    width: 100%;
+    height: auto;
+}
+.titulo{
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    color: v.$rojo;
+}
+.informacion {
+    background-color: v.$negroOscuro;
+    padding: 5rem;
+}
+.parrafo {
+    font-family: v.$fuente_principal;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: v.$blanco;
+}

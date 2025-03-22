@@ -11,20 +11,16 @@ html {
     box-sizing: inherit;
 }
 body {
+    background-color: v.$negroOscuro;
     font-family: v.$fuente_principal;
     font-optical-sizing: auto;
     font-style: normal;
-    color: v.$negro;
+    color: v.$blanco;
     font-size: 2rem;
 
     &.overflow-hidden {
         overflow: hidden;
     }
-}
-p {
-    font-size: 2rem;
-    color: v.$negro;
-    line-height: 1.5;
 }
 .contenedor {
     width: 95%;

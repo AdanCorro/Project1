@@ -1,0 +1,195 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Contenedor de la barra de navegación */
+.contenedor {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.navegacion {
+    padding-right: 2rem;
+    display: flex;
+    gap: 5rem;
+}
+.nav-link {
+    color: v.$blanco;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: v.$rojoFuerte;
+}
+.iconos {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.user-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: v.$blanco;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.user-link:hover {
+    color: v.$rojoFuerte;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    stroke: v.$blanco;
+    transition: stroke 0.3s;
+}
+.user-link:hover .icon {
+    stroke: v.$rojoFuerte;
+}
+/* LISTA DESPLEGABLE */
+.dropdown-toggle::after {
+    content: " \25BC";
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+.dropdown:hover .dropdown-toggle::after {
+    content: " \25B2"; /* Cambia la flecha hacia arriba cuando el menú esté activo */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: v.$negro;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    text-align: center;
+    color: v.$blanco;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-toggle:hover, .dropdown-content a:hover {
+    background-color: v.$rojoFuerte;
+    color: v.$blanco;
+    text-shadow: 2px 2px 4px v.$negro;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+/*MENÚ DE HAMBURGUESA*/
+.navbar {
+    position: relative;
+    z-index: 1000;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+.nav {
+    background-color: v.$negro;
+    width: 100%;
+    height: 3.5rem;
+}
+.menu_hamburguesa {
+    display: none;
+}
+.label_hamburguesa {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 70px; // Ajusta la posición debajo del logo
+    left: 20px;
+    z-index: 1001;
+}
+@media screen and (max-width: 768px) {
+    .label_hamburguesa {
+        display: block;
+    }
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(38vh - 32px);
+}
+.list_icon {
+    color: v.$blanco; // Hace que el icono sea blanco
+    cursor: pointer;
+    position: absolute;
+    z-index: 1100;
+}
+.ul_links {
+    width: 40%;
+    padding: 0;
+    background-color: v.$negro;
+    position: relative;
+    top: 32px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: .8rem;
+
+}
+.nav-linkH{
+    color: v.$blanco;
+    text-shadow: 2px 2px 4px v.$gris;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.navegacion-hamburguesa {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: v.$negro;
+    padding: 10px 0;
+}
+// Mostrar el menú cuando el checkbox está activo
+.menu_hamburguesa:checked + .ul_links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: v.$negro;
+}
+.header {
+    display: none;
+}
+
+.navegacion-hamburguesa {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+    }
+    .navegacion-hamburguesa {
+        display: none;
+    }
+}

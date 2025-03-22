@@ -1,11 +1,83 @@
 @use 'base/variables' as v;
 
 .footer {
-    background-color: v.$rosa;
+    background-color: v.$negro;
     padding: 2rem 0;
-    p {
-        margin: 0;
-        color: v.$blanco;
+    text-align: center;
+}
+
+.footer-elementos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;  // Permite que los elementos se acomoden en pantallas pequeñas
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.footer-titulo {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: v.$blanco;
+}
+
+.footer-parrafo {
+    color: v.$blanco;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.icons-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon-footer {
+    color: v.$blanco;
+    transition: color 0.3s ease;
+}
+
+.icon-footer:hover, .footer-titulo:hover {
+    color: v.$rojoFuerte;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .footer-elementos {
+        flex-direction: column;
         text-align: center;
+    }
+    
+    .footer-titulo {
+        font-size: 1.5rem;
+    }
+    
+    .icons-footer {
+        justify-content: center;
+    }
+    
+    .footer-parrafo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-elementos {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .icons-footer {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-titulo {
+        font-size: 2rem;
     }
 }

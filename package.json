@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "description": "Este va hacer una Aplciacion Fitness completa ",
   "main": "gulpfile.js",
-  "tyape": "module",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
   },
+  "keywords": [
+    "SAAS",
+    "NPM",
+    "Gulp"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AdanCorro/Project1.git"
   },
-  "author": "Adan, Majo, Javier",
+  "author": "Adan, María José, Javier",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AdanCorro/Project1/issues"
