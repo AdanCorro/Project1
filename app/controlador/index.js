@@ -5,7 +5,7 @@ App.controller('indexCtrl', function($scope,$http){
 $scope.usuario={};
 
 $scope.guardar = function(){
-	$http.post('../api/guardarUsuario.php',$scope.usuario)
+	$http.post('../api/usuarios/guardarUsuarios.php',$scope.usuario)
 	.success(function(data,status,headers,config){
 		$scope.usuario={};
 		alert("Registrado");
