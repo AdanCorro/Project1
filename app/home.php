@@ -1,7 +1,7 @@
 <?php require_once 'encabezado.php'; ?>
 <main class="contenido">
     <div class="inicio">
-        <img src="src/img/img-pz.png" alt="Gimnasio" class="imagen-inicio">
+        <img src="../src/img/img-pz.png" alt="Gimnasio" class="imagen-inicio">
     </div>
 
     <div class="informacion">

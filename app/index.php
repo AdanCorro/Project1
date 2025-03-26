@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PowerZone</title>
-  <link rel="icon" type="image/png" href="./img/ITSAV.png" />
+  <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/margenes.css">
   <script src="./controlador/jquery.min.js"></script>
@@ -23,21 +23,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <IMG class="navbar-brand" SRC=""> </IMG>
-        <a class="navbar-brand" href="./index.php"> Power Zone</a>
+        <a class="navbar-brand" href="./index.php">Power Zone</a>
       </div>
 
       <div class="collapse navbar-collapse" id="myNavbar">
         <form class="navbar-form navbar-right" action="../api/login.php" method="post" role="form">
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input type="text" class="form-control" name="email" placeholder="Email" required>
+            <input type="text" class="form-control" name="correo" placeholder="Correo" required>
           </div>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
             <input type="password" class="form-control" name="pass" placeholder="Contraseña" required>
           </div>
-          <button type="submit" class="btn btn-info">Iniciar sesión</button>
+          <button type="submit" class="btn btn-info" name="login">Iniciar sesión</button>
         </form>
       </div>
     </div>
@@ -134,6 +133,6 @@
 </div>
 </body>
 
-<?php require_once 'pie.php'; ?>
+<?php require_once 'footer.php'; ?>
 
 </html>

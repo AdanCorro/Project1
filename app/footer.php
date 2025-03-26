@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="build/css/app.css">
+<link rel="stylesheet" href="../build/css/app.css">
 <footer class="footer">
         <div class="footer-elementos">
             <div class="footer-elementos__element">

@@ -10,19 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
-    <link rel="icon" href="src/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../build/css/app.css">
+    <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
 </head>
 <body>
         <!-- Menú Normal (Solo visible en pantallas grandes) -->
         <header class="header d-none d-md-flex">
-            <a href="index.html">
-                <img class="logo" src="src/img/logo.png" alt="logo">
+            <a href="home.html">
+                <img class="logo" src="../src/img/logo.png" alt="logo">
             </a>
             <div class="contenedor">
                 <div class="barra">
                     <nav class="navegacion">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="home.html">Inicio</a>
                         <a class="nav-link" href="comunidad.html">Comunidad</a>
                         <div class="dropdown">
                             <a class="nav-link no-margin dropdown-toggle" href="#">Rutinas</a>
@@ -53,7 +53,7 @@
         <!-- Menú de Hamburguesa (Solo visible en pantallas pequeñas) -->
         <header class="navegacion-hamburguesa d-md-none">
             <a href="index.html">
-                <img class="logo" src="src/img/logo.png" alt="logo">
+                <img class="logo" src="../src/img/logo.png" alt="logo">
             </a>
             <label class="label_hamburguesa" for="menu_hamburguesa">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
