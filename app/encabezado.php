@@ -18,7 +18,7 @@
 <body>
     <!-- Menú Normal (Solo visible en pantallas grandes) -->
     <header class="header d-none d-md-flex">
-        <a href="home.html">
+        <a href="home.php">
             <img class="logo" src="../src/img/logo.png" alt="logo">
         </a>
         <div class="contenedor">
@@ -41,13 +41,13 @@
             <div class="iconos">
                 <div class="usuario">
                     <a href="settings.php" class="user-link">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <li><a href="settings.php"><?php session_start();
-                                                        echo  $_SESSION['usuario']; ?></a></li>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <circle cx="12" cy="7" r="4" />
                             <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                         </svg>
+                        <?php session_start();
+                        echo $_SESSION['usuario']; ?>
                     </a>
                 </div>
             </div>
