@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../build/css/app.css">
+    <link rel="stylesheet" href="app.css">
     <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
 </head>
 
@@ -24,7 +25,7 @@
         <div class="contenedor">
             <div class="barra">
                 <nav class="navegacion">
-                    <a class="nav-link" href="home.html">Inicio</a>
+                    <a class="nav-link" href="home.php">Inicio</a>
                     <a class="nav-link" href="comunidad.html">Comunidad</a>
                     <div class="dropdown">
                         <a class="nav-link no-margin dropdown-toggle" href="#">Rutinas</a>
@@ -35,7 +36,7 @@
                             <a class="nav-link" href="#">Resistencia</a>
                         </div>
                     </div>
-                    <a class="nav-link" href="dietas.html">Dietas</a>
+                    <a class="nav-link" href="dietas.php">Dietas</a>
                 </nav>
             </div>
             <div class="iconos">
@@ -49,6 +50,7 @@
                         <?php session_start();
                         echo $_SESSION['usuario']; ?>
                     </a>
+                    <a href="index.php">Salir</a>
                 </div>
             </div>
         </div>
