@@ -1,0 +1,157 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.admin-card__boton{
+    background-color: v.$rojoFuerte;
+    color: v.$blanco;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+.admin-card__boton:hover{
+    background-color: v.$rojoClaro;
+    color: v.$blanco;
+}
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); /* aumenta el mínimo */
+    gap: 2rem;
+  }
+.admin-card__titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.admin-card__texto{
+    font-size: 1.5rem;
+}
+/*ADMINISTRACION DE USUARIOS*/
+table{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.btnadmCtrl {
+  background-color: v.$rojoFuerte;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btnadmCtrl:hover {
+  background-color: v.$rojoClaro;
+}
+
+/* Título de administración */
+.admin-titulo {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: v.$rojoFuerte;
+  margin-bottom: 25px;
+}
+
+/* Tabla de usuarios */
+.table {
+  background-color: v.$blanco;
+  color: v.$negro;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: v.$blanco;
+  color: v.$negro;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-striped > tbody > tr:nth-child(odd) {
+  background-color: #f8f9fc;
+}
+
+/* Íconos */
+.glyphicon {
+  font-size: 16px;
+}
+
+/* Formulario modal */
+.modal {
+  display: none; /* Ocultar por defecto */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.fade.in {
+  display: block; /* Mostrar con clase activa */
+}
+
+.modal-header.bg-primary {
+  background-color: v.$rojoFuerte;
+  color: white;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.form-horizontal .form-group label {
+  font-weight: 500;
+}
+
+input.form-control {
+  border-radius: 6px;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+/* Botones dentro de formularios */
+button.btn-primary {
+  background-color: v.$rojoFuerte;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+button.btn-primary:hover {
+  background-color: v.$rojoClaro;
+}
+
+button.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+button.btn-success {
+  background-color: v.$rojoClaro;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* Footer del modal */
+.modal-footer {
+  border-top: 1px solid #e9ecef;
+}

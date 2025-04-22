@@ -40,20 +40,23 @@
                 </nav>
             </div>
             <div class="iconos">
-                <div class="usuario">
-                    <a href="settings.php" class="user-link">
+                <div class="usuario dropdown">
+                    <div class="user-link dropdown-toggle">
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <circle cx="12" cy="7" r="4" />
                             <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                         </svg>
-                        <?php session_start();
-                        echo $_SESSION['usuario']; ?>
-                    </a>
-                    <a href="index.php">Salir</a>
+                        <?php
+                        session_start();
+                        echo $_SESSION['usuario'];
+                        ?>
+                    </div>
+                    <div class="dropdown-content">
+                        <a style="font-size: 18px" href="logout.php">Cerrar sesión</a>
+                    </div>  
                 </div>
             </div>
-        </div>
     </header>
 
     <!-- Menú de Hamburguesa (Solo visible en pantallas pequeñas) -->
