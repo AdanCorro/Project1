@@ -859,4 +859,160 @@ button.btn-success {
 /* Footer del modal */
 .modal-footer {
   border-top: 1px solid #e9ecef;
+}
+
+/* Contenedor principal */
+.rs-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Columnas laterales */
+.rs-sidebar-left, .rs-sidebar-right {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.rs-menu-list, .rs-suggestions-list {
+  list-style: none;
+}
+
+.rs-menu-list li, .rs-suggestions-list li {
+  margin-bottom: 10px;
+}
+
+.rs-sidebar-left a, .rs-sidebar-right a {
+  color: #BF0B0B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rs-suggestions-title {
+  color: #000000;
+  text-align: center;
+}
+
+/* Título sugerencias */
+.rs-suggestions-title {
+  margin-bottom: 10px;
+}
+
+/* Sección de publicaciones */
+.rs-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Crear nueva publicación */
+.rs-create-post {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.rs-textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.rs-post-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rs-file-input {
+  flex: 1;
+}
+
+.rs-post-btn {
+  background-color: #BF0B0B;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.rs-post-btn:hover {
+  background-color: #262626;
+}
+
+/* Publicación */
+.rs-post {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.rs-post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rs-profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rs-timestamp {
+  font-size: 0.8em;
+  color: #8C8987;
+}
+
+.rs-post-content p {
+  margin: 10px 0;
+}
+
+.rs-post-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.rs-post-footer {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.rs-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #BF0B0B;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.rs-action-btn:hover {
+  color: #262626;
+}
+
+strong, p {
+  color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .rs-container {
+    grid-template-columns: 1fr;
+  }
+  .rs-sidebar-left, .rs-sidebar-right {
+    display: none;
+  }
 }/*# sourceMappingURL=app.css.map */

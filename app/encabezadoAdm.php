@@ -28,7 +28,7 @@
         <div class="barra">
           <nav class="navegacion">
             <a class="nav-link" href="home.php">Inicio</a>
-            <a class="nav-link" href="comunidad.html">Comunidad</a>
+            <a class="nav-link" href="comunidad.php">Comunidad</a>
             <div class="dropdown">
               <a class="nav-link no-margin dropdown-toggle" href="#">Rutinas</a>
               <div class="dropdown-content">
