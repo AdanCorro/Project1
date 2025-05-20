@@ -42,7 +42,7 @@
             </button>
           </td>
           <td>
-            <button type="button" ng-click="modificarUsuario(u)" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalModificarUsuario">
+            <button type="button" ng-click="modificarUsuario(u)" class="btn btn-warning"">
               <span class="glyphicon glyphicon-pencil"></span>Modificar
             </button>
           </td>
@@ -175,11 +175,11 @@
 
           <div class="mb-3">
             <label>Género:</label>
-            <select class="form-select" ng-model="usuarioMod.genero" required>
+            <select class="form-select" ng-model="usuarioMod.genero">
               <option value="">-- Selecciona --</option>
               <option value="Masculino">Masculino</option>
               <option value="Femenino">Femenino</option>
-              <option value="Otro">Otro</option>
+              <option value="Otro">Marciano</option>
             </select>
           </div>
 
@@ -208,9 +208,6 @@
     </form>
   </div>
 </div>
-
-
-
 </body>
 
 </html>

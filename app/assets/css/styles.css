@@ -79,6 +79,7 @@ a {
   font-size: 1.25rem;
   padding: 0.75rem;
   cursor: pointer;
+  border-radius: .5rem;
 }
 .nav__logo {
   color: var(--white-color);
