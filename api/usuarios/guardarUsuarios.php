@@ -8,17 +8,16 @@ $pass = md5($obj->password);
 $fecha = date("Y-m-d H:i:s"); // Fecha y hora actual
 
 $stmt = $db->prepare("INSERT INTO usuarios 
-    (nombre, ap_paterno, ap_materno, correo, rol, genero, altura, peso, fecha_registro, password) 
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    (nombre, ap_paterno, ap_materno, correo, genero, altura, peso, fecha_registro, password) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
 ");
 
 $stmt->bind_param(
-    'ssssssddss',
+    'sssssddss',
     $obj->nombre,
     $obj->ap_paterno,
     $obj->ap_materno,
     $obj->correo,
-    $obj->rol,
     $obj->genero,
     $obj->altura,
     $obj->peso,
@@ -33,4 +32,3 @@ if ($stmt->execute()) {
 }
 
 $stmt->close();
-?>

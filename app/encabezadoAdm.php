@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,24 +21,22 @@
     <nav class="nav">
       <div>
         <div class="nav__brand">
-          <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+          <ion-icon name="menu-outline" class="nav__toggle active" id="nav-toggle"></ion-icon>
           <a href="administrador.php" class="nav__logo">Administración</a>
         </div>
         <div class="nav__list">
-          <a href="#" class="nav__link active">
-            <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+          <a href="calendario.php" class="nav__link">
+            <ion-icon name="calendar-outline" class="nav__icon"></ion-icon>
             <span class="nav__name">Calendario</span>
           </a>
           <a href="usuarios.php" class="nav__link">
             <ion-icon name="people-outline" class="nav__icon"></ion-icon>
             <span class="nav__name">Usuarios</span>
           </a>
-
-          <a href="ejercicios.php" class="nav__link active">
-            <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+          <a href="ejercicios.php" class="nav__link">
+            <ion-icon name="barbell-outline" class="nav__icon"></ion-icon>
             <span class="nav__name">Ejercicios</span>
           </a>
-
           <a href="rutinas.php" class="nav__link">
             <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
             <span class="nav__name">Rutinas</span>
@@ -51,16 +52,16 @@
               <a href="#" class="collapse__sublink">Group</a>
             </ul>
           </div>
-          <a href="#" class="nav__link">
+          <a href="settings.php" class="nav__link">
             <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
-            <span class="nav__name">Settings</span>
+            <span class="nav__name">Ajustes</span>
           </a>
         </div>
       </div>
 
-      <a href="#" class="nav__link">
+      <a href="home.php" class="nav__link active">
         <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
-        <span class="nav__name">Log Out</span>
+        <span class="nav__name">Cerrar sesión</span>
       </a>
     </nav>
   </div>

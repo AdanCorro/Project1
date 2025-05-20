@@ -21,7 +21,7 @@ if ($stmt->fetch()) {
     }
 
     if ($rol == "administrador") {
-        header("Location: ../app/administrador.php");
+        header("Location: ../app/encabezadoAdm.php");
         exit();
     }
 } else {
