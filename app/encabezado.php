@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZJr9o5HEyPvR3XtSXLzvH4wwQn8KCh38lF5KZJwQVoZd5vyiJ+F0JGpG6jhM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZMtdQFhPcPklE5D3OjnaWB5V4ScnUqywMKr+2QFUI0ttPsuCXjq4XhFz9TJoA6sI" crossorigin="anonymous"></script>
 
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
@@ -55,7 +54,7 @@
                     </div>
                     <div class="dropdown-content">
                         <a style="font-size: 18px" href="logout.php">Cerrar sesión</a>
-                    </div>  
+                    </div>
                 </div>
             </div>
     </header>

@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 require_once '../conexion.php';
 $obj = json_decode(file_get_contents("php://input"));
 $stmt = $db->prepare("UPDATE usuarios 
-    SET nombre=?, ap_paterno=?, ap_materno=?, correo=?, fecha_nacimiento=?, genero=?, altura=?, peso=?
+    SET nombre=?, ap_paterno=?, ap_materno=?, correo=?, rol=?, genero=?, altura=?, peso=?
     WHERE id=?");
 $stmt->bind_param(
     'sssssssdi', 
@@ -11,7 +11,7 @@ $stmt->bind_param(
     $obj->ap_paterno, 
     $obj->ap_materno, 
     $obj->correo, 
-    $obj->fecha_nacimiento, 
+    $obj->rol,
     $obj->genero, 
     $obj->altura, 
     $obj->peso, 
