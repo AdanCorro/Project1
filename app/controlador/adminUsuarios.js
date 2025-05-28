@@ -28,8 +28,8 @@ $scope.guardarUsuario = function() {
         $scope.nuevoUsuario = {}; // Limpia el formulario
         var modalElement = document.getElementById('modalAgregarUsuario');
         var modalInstance = bootstrap.Modal.getInstance(modalElement);
-        modalInstance.hide(); // Cierra el modal
-        $scope.consultar(); // Asumiendo que tienes una función para recargar
+        modalInstance.hide();
+        $scope.consultar();
       } else {
         alert("Error: " + response.data.message);
       }
@@ -72,11 +72,11 @@ $scope.modificarUsuarioConfirmado = function() {
       var modalElement = document.getElementById('modalModificarUsuario');
       var modalInstance = bootstrap.Modal.getInstance(modalElement);
       modalInstance.hide();
-    }, function(error) {
+      $scope.consultar();
+    }, 
+    function(error) {
       console.error("Error al modificar el usuario:", error);
       alert("Error al modificar usuario.");
     });
 };
-
-$scope.consultar();
 });

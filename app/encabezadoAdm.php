@@ -10,8 +10,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <link rel="stylesheet" href="assets/css/calendario.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+
   <title>Administración</title>
   <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
 </head>
@@ -22,7 +25,7 @@
       <div>
         <div class="nav__brand">
           <ion-icon name="menu-outline" class="nav__toggle active" id="nav-toggle"></ion-icon>
-          <a href="administrador.php" class="nav__logo">Administración</a>
+          <a href="#" class="nav__logo">Administración</a>
         </div>
         <div class="nav__list">
           <a href="calendario.php" class="nav__link">
@@ -41,17 +44,12 @@
             <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
             <span class="nav__name">Rutinas</span>
           </a>
-          <div class="nav__link collapse">
+
+          <a href="comunidadAdmin.php" class="nav__link">
             <ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
             <span class="nav__name">Comunidad</span>
+          </a>
 
-            <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
-
-            <ul class="collapse__menu">
-              <a href="#" class="collapse__sublink">Data</a>
-              <a href="#" class="collapse__sublink">Group</a>
-            </ul>
-          </div>
           <a href="settings.php" class="nav__link">
             <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
             <span class="nav__name">Ajustes</span>
